@@ -1,12 +1,22 @@
 [
   {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
-  },
-  {
     "file": "experiments/flowfield-03.js",
     "name": "Flowfield 01",
     "description": "I started doing a flowfield, and this looked quite interested. I used tyler hobbs as inspo, but this was just something that happened in teh process."
+  },
+  {
+    "file": "experiments/flowfield-04-color.js",
+    "name": "Flowfield 02 (rainbow)",
+    "description": "A continuation of the flowfield, but here i used colors."
+  },
+  {
+    "file": "experiments/flowfield-04-color.js",
+    "name": "Flowfield 03 (circle + alpha)",
+    "description": "Another continuation of the flowfield, but here i introduced alpha and aldo put it in a circle."
+  },
+  {
+    "file": "experiments/schotter01.js",
+    "name": "Schotter recreated",
+    "description": "This is a recreation of Georg Nees' Schotter."
   }
 ]
