@@ -44,5 +44,5 @@ function draw() {
     }
   }
   pop();
-  noLoop();
+  // noLoop();
 }
