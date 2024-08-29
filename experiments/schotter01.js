@@ -18,8 +18,8 @@ function draw() {
   push();
   //starting point
   translate(
-    screenWidth / 2 + (cols / 2) * size,
-    screenHeight / 2 + (rows / 2) * size
+    windowWidth / 2 + (cols / 2) * size,
+    windowHeight / 2 + (rows / 2) * size
   );
 
   noFill();
