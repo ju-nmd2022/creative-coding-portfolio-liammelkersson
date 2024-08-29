@@ -17,10 +17,7 @@ function draw() {
 
   push();
   //starting point
-  translate(
-    windowWidth / 2 + (cols / 2) * size,
-    windowHeight / 2 + (rows / 2) * size
-  );
+  translate(windowWidth / 2 + cols / 2, windowHeight / 2 + rows / 2);
 
   noFill();
   strokeWeight(1);
