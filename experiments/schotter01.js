@@ -1,6 +1,7 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(220, 210, 200);
+  frameRate(1);
 }
 
 function draw() {
@@ -16,7 +17,10 @@ function draw() {
 
   push();
   //starting point
-  translate(125, 60);
+  translate(
+    screenWidth / 2 + (cols / 2) * size,
+    screenHeight / 2 + (rows / 2) * size
+  );
 
   noFill();
   strokeWeight(1);

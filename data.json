@@ -10,7 +10,7 @@
     "description": "A continuation of the flowfield, but here i used colors."
   },
   {
-    "file": "experiments/flowfield-04-color.js",
+    "file": "experiments/flowfield-06-alpha.js",
     "name": "Flowfield 03 (circle + alpha)",
     "description": "Another continuation of the flowfield, but here i introduced alpha and aldo put it in a circle."
   },
