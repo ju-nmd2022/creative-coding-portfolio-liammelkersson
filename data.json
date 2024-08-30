@@ -2,7 +2,7 @@
   {
     "file": "experiments/flowfield-03.js",
     "name": "Flowfield 01",
-    "description": "I started doing a flowfield, and this looked quite interested. I used tyler hobbs as inspo, but this was just something that happened in teh process."
+    "description": "I started doing a flowfield, and this looked quite interested. I used tyler hobbs as inspo, but this was just something that happened in the process."
   },
   {
     "file": "experiments/flowfield-04-color.js",
@@ -18,5 +18,15 @@
     "file": "experiments/schotter01.js",
     "name": "Schotter recreated",
     "description": "This is a recreation of Georg Nees' Schotter."
+  },
+  {
+    "file": "experiments/schotter02.js",
+    "name": "Schotter at a disco",
+    "description": "I played around a bit tried to add color and changed the aplha, and this looked pretty cool. "
+  },
+  {
+    "file": "experiments/schotter05.js",
+    "name": "Schotter on LSD",
+    "description": "Here i went rouge and basically added a dynamic rotating effect that looks quite mesmerizing. sin() and cos() functions on the offset creates that wavy efect."
   }
 ]
