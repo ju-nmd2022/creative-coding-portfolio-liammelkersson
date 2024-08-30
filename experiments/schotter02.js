@@ -16,7 +16,11 @@ function draw() {
 
   push();
   //starting point
-  translate(125, 60);
+  // translate(125, 60);
+  translate(
+    windowWidth / 2 + cols / 2 - cols * 2 - 100,
+    windowHeight / 2 + rows / 2 - rows * 2 - 200
+  );
 
   noFill();
   strokeWeight(1);

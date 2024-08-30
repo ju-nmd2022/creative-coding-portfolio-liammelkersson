@@ -13,7 +13,11 @@ function draw() {
   let size = 25;
 
   push();
-  translate(125, 60);
+  // translate(125, 60);
+  translate(
+    windowWidth / 2 + cols / 2 - cols * 2 - 100,
+    windowHeight / 2 + rows / 2 - rows * 2 - 200
+  );
 
   for (let row = 0; row < rows; row++) {
     for (let col = 0; col < cols; col++) {
