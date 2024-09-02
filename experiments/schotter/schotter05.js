@@ -29,9 +29,13 @@ function draw() {
       let offsetY = sin(frameCount * 3 + col * 10) * 10;
       let offsetX = cos(frameCount * 3 + row * 10) * 10;
 
+      // let r = random(0, 255);
+      // let g = random(0, 255);
+      // let b = 255;
+
       let r = random(0, 255);
-      let g = random(0, 255);
-      let b = 255;
+      let g = 255;
+      let b = random(0, 255);
 
       stroke(r, g, b, 200);
       strokeWeight(random(0.5, 3));

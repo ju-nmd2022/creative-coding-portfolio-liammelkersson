@@ -1,32 +1,37 @@
 [
   {
-    "file": "experiments/flowfield-03.js",
+    "file": "experiments/flowfields/flowfield-03.js",
     "name": "Flowfield 01",
     "description": "I started doing a flowfield, and this looked quite interested. I used tyler hobbs as inspo, but this was just something that happened in the process."
   },
   {
-    "file": "experiments/flowfield-04-color.js",
-    "name": "Flowfield 02 (rainbow)",
+    "file": "experiments/flowfields/flowfield-04-color.js",
+    "name": "Vortice Colore / Farbenwirbel",
     "description": "A continuation of the flowfield, but here i used colors."
   },
   {
-    "file": "experiments/flowfield-06-alpha.js",
-    "name": "Flowfield 03 (circle + alpha)",
+    "file": "experiments/flowfields/flowfield-06-alpha.js",
+    "name": "Aurora swirl",
     "description": "Another continuation of the flowfield, but here i introduced alpha and aldo put it in a circle."
   },
   {
-    "file": "experiments/schotter01.js",
-    "name": "Schotter recreated",
+    "file": "experiments/schotter/schotter01.js",
+    "name": "Schotter Recreated",
     "description": "This is a recreation of Georg Nees' Schotter."
   },
   {
-    "file": "experiments/schotter02.js",
-    "name": "Schotter at a disco",
+    "file": "experiments/schotter/schotter02.js",
+    "name": "Azure flow",
     "description": "I played around a bit tried to add color and changed the aplha, and this looked pretty cool. "
   },
   {
-    "file": "experiments/schotter05.js",
-    "name": "Schotter on LSD",
+    "file": "experiments/schotter/schotter05.js",
+    "name": "LSD Schotter",
     "description": "Here i went rouge and basically added a dynamic rotating effect that looks quite mesmerizing. sin() and cos() functions on the offset creates that wavy efect."
+  },
+  {
+    "file": "experiments/game-of-life/game-of-life-03.js",
+    "name": "Chroma Life",
+    "description": "Based on conways game of life. I got the inspo for the colors by playing around on https://rafaelcosman.github.io/JSGameOfLife/"
   }
 ]
