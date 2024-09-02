@@ -94,15 +94,6 @@ function calculateNewState(x, y) {
 }
 
 function draw() {
-  push();
-  fill(255);
-  textSize(32);
-  textAlign(CENTER, TOP);
-
-  text("try drawing on the canvas :)", width / 2, 10);
-  pop();
-  noLoop();
-
   if (count == 0) {
     noStroke();
     for (let i = 0; i < board.length; i++) {
@@ -122,6 +113,14 @@ function draw() {
   if (count == lifecycle) {
     count = 0;
   }
+
+  push();
+  fill(255);
+  textSize(32);
+  textAlign(CENTER, TOP);
+
+  text("try drawing on the canvas :)", width / 2, 10);
+  pop();
 }
 
 function toggleCircleArea(x, y, radius) {
