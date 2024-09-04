@@ -37,6 +37,6 @@
   {
     "file": "experiments/boid/boid01.js",
     "name": "HydraVoid",
-    "description": "Based on conways game of life. I got the inspo for the colors by playing around on https://rafaelcosman.github.io/JSGameOfLife/"
+    "description": "A flocking simulation based on Boids (Craig Reynolds). Made with the help of The Coding Train: https://www.youtube.com/watch?v=mhjuuHl6qHM&t=426s"
   }
 ]
