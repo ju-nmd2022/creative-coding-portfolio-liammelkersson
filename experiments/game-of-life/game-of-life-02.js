@@ -26,10 +26,10 @@ class Cell {
 }
 
 let board = [];
-let size = 8;
+let size = 10;
 let lifecycle = 2;
 let count = 0;
-let boardsize = windowWidth / size;
+let boardsize = 150;
 let radius = 5;
 
 for (let i = 0; i < boardsize; i++) {
