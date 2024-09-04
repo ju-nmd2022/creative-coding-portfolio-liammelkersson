@@ -2,7 +2,7 @@
 //color + drawing inspiration from https://rafaelcosman.github.io/JSGameOfLife/
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(3200, 1080);
   frameRate(60);
   colorMode(HSB);
 }
@@ -55,10 +55,10 @@ class Cell {
 }
 
 let board = [];
-let size = 5;
+let size = 7;
 let lifecycle = 2;
 let count = 0;
-let boardsize = windowWidth / size;
+let boardsize = 150;
 let radius = 5;
 
 for (let i = 0; i < boardsize; i++) {

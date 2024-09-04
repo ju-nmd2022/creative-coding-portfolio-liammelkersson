@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(2500, 1080);
+  createCanvas(3200, 1080);
   frameRate(60);
 }
 
