@@ -1,10 +1,5 @@
 [
   {
-    "file": "experiments/flowfields/flowfield-03.js",
-    "name": "Flowfield 01",
-    "description": "I started doing a flowfield, and this looked quite interested. I used tyler hobbs as inspo, but this was just something that happened in the process."
-  },
-  {
     "file": "experiments/flowfields/flowfield-04-color.js",
     "name": "Vortice Colore / Farbenwirbel",
     "description": "A continuation of the flowfield, but here i used colors."
@@ -37,6 +32,11 @@
   {
     "file": "experiments/game-of-life/game-of-life-03.js",
     "name": "Chroma Life",
+    "description": "Based on conways game of life. I got the inspo for the colors by playing around on https://rafaelcosman.github.io/JSGameOfLife/"
+  },
+  {
+    "file": "experiments/boid/boid01.js",
+    "name": "HydraVoid",
     "description": "Based on conways game of life. I got the inspo for the colors by playing around on https://rafaelcosman.github.io/JSGameOfLife/"
   }
 ]
