@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(windowWidth, windowHeight);
   frameRate(60);
 }
 
@@ -29,7 +29,7 @@ let board = [];
 let size = 8;
 let lifecycle = 2;
 let count = 0;
-let boardsize = 100;
+let boardsize = windowWidth / size;
 let radius = 5;
 
 for (let i = 0; i < boardsize; i++) {
@@ -91,24 +91,52 @@ function draw() {
   }
 }
 
-function toggleCircleArea(x, y, radius) {
-  let radiusSquared = radius * radius;
-
-  for (let i = x - radius; i <= x + radius; i++) {
-    for (let j = y - radius; j <= y + radius; j++) {
-      if (i >= 0 && i < boardsize && j >= 0 && j < boardsize) {
-        let distanceSquared = (i - x) * (i - x) + (j - y) * (j - y);
-        if (distanceSquared <= radiusSquared) {
-          board[i][j].toggleState();
-        }
+function toggleSquareArea(x, y, radius) {
+  // making a grid for the square
+  for (let squareX = x - radius; squareX <= x + radius; squareX++) {
+    for (let squareY = y - radius; squareY <= y + radius; squareY++) {
+      // square bounding box check
+      if (
+        squareX >= 0 &&
+        squareX < boardsize &&
+        squareY >= 0 &&
+        squareY < boardsize
+      ) {
+        //toggling the state of each cell within the square
+        board[squareX][squareY].toggleState();
       }
     }
   }
 }
 
+// function toggleCircleArea(x, y, radius) {
+//   //chatgpt helped here with mathing
+//   let radiusSquared = radius * radius;
+
+//   //making a grid for the circle
+//   for (let circleX = x - radius; circleX <= x + radius; circleX++) {
+//     for (let circleY = y - radius; circleY <= y + radius; circleY++) {
+//       //circle bounding box
+//       if (
+//         circleX >= 0 &&
+//         circleX < boardsize &&
+//         circleY >= 0 &&
+//         circleY < boardsize
+//       ) {
+//         let distanceSquared =
+//           (circleX - x) * (circleX - x) + (circleX - y) * (circleY - y);
+//         if (distanceSquared <= radiusSquared) {
+//           board[circleX][circleY].toggleState();
+//         }
+//       }
+//     }
+//   }
+// }
+
 function mouseDragged() {
   let gridX = floor(mouseX / size);
   let gridY = floor(mouseY / size);
 
-  toggleCircleArea(gridX, gridY, radius);
+  // toggleCircleArea(gridX, gridY, radius);
+  toggleSquareArea(gridX, gridY, radius);
 }

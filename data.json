@@ -30,6 +30,11 @@
     "description": "Here i went rouge and basically added a dynamic rotating effect that looks quite mesmerizing. sin() and cos() functions on the offset creates that wavy efect."
   },
   {
+    "file": "experiments/game-of-life/game-of-life-02.js",
+    "name": "Anima vestra",
+    "description": "Based on conways game of life. But you can toggle cells status by drawing."
+  },
+  {
     "file": "experiments/game-of-life/game-of-life-03.js",
     "name": "Chroma Life",
     "description": "Based on conways game of life. I got the inspo for the colors by playing around on https://rafaelcosman.github.io/JSGameOfLife/"

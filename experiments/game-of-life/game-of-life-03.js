@@ -1,6 +1,9 @@
+//based on game of life example from garrits lecture on complexity
+//color + drawing inspiration from https://rafaelcosman.github.io/JSGameOfLife/
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  frameRate(90);
+  frameRate(60);
   colorMode(HSB);
 }
 
@@ -14,6 +17,7 @@ class Cell {
 
   draw(size) {
     let hue = (frameCount + this.x * 10 + this.y * 10) % 360;
+    //the modulo operator (%) is used to keep the hue value within the range of 0 to 359.
     if (this.state === 0) {
       let liveNeighbors = this.countLiveNeighbors();
       if (liveNeighbors > 0) {
@@ -51,10 +55,10 @@ class Cell {
 }
 
 let board = [];
-let size = 7;
+let size = 5;
 let lifecycle = 2;
 let count = 0;
-let boardsize = 100;
+let boardsize = windowWidth / size;
 let radius = 5;
 
 for (let i = 0; i < boardsize; i++) {
@@ -114,33 +118,52 @@ function draw() {
     count = 0;
   }
 
-  push();
-  fill(255);
-  textSize(32);
-  textAlign(CENTER, TOP);
+  // push();
+  // fill(255);
+  // textSize(32);
+  // textAlign(CENTER, TOP);
 
-  text("try drawing on the canvas :)", width / 2, 10);
-  pop();
+  // text("try drawing on the canvas :)", width / 2, 10);
+  // pop();
 }
 
-function toggleCircleArea(x, y, radius) {
-  let radiusSquared = radius * radius;
-
-  for (let i = x - radius; i <= x + radius; i++) {
-    for (let j = y - radius; j <= y + radius; j++) {
-      if (i >= 0 && i < boardsize && j >= 0 && j < boardsize) {
-        let distanceSquared = (i - x) * (i - x) + (j - y) * (j - y);
-        if (distanceSquared <= radiusSquared) {
-          board[i][j].toggleState();
-        }
+function toggleSquareArea(x, y, radius) {
+  // making a grid for the square
+  for (let squareX = x - radius; squareX <= x + radius; squareX++) {
+    for (let squareY = y - radius; squareY <= y + radius; squareY++) {
+      // square bounding box check
+      if (
+        squareX >= 0 &&
+        squareX < boardsize &&
+        squareY >= 0 &&
+        squareY < boardsize
+      ) {
+        //toggling the state of each cell within the square
+        board[squareX][squareY].toggleState();
       }
     }
   }
 }
 
+// function toggleCircleArea(x, y, radius) {
+//   let radiusSquared = radius * radius;
+
+//   for (let i = x - radius; i <= x + radius; i++) {
+//     for (let j = y - radius; j <= y + radius; j++) {
+//       if (i >= 0 && i < boardsize && j >= 0 && j < boardsize) {
+//         let distanceSquared = (i - x) * (i - x) + (j - y) * (j - y);
+//         if (distanceSquared <= radiusSquared) {
+//           board[i][j].toggleState();
+//         }
+//       }
+//     }
+//   }
+// }
+
 function mouseDragged() {
   let gridX = floor(mouseX / size);
   let gridY = floor(mouseY / size);
 
-  toggleCircleArea(gridX, gridY, radius);
+  // toggleCircleArea(gridX, gridY, radius);
+  toggleSquareArea(gridX, gridY, radius);
 }
