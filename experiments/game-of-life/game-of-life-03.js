@@ -2,7 +2,7 @@
 //color + drawing inspiration from https://rafaelcosman.github.io/JSGameOfLife/
 
 function setup() {
-  createCanvas(3200, 1080);
+  createCanvas(2000, 1080);
   frameRate(60);
   colorMode(HSB);
 }
