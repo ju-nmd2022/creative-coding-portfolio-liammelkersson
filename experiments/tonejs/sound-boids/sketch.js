@@ -43,7 +43,7 @@ function draw() {
 
     let frequencyIndex = 100;
     let frequencyValue = frequencyData[frequencyIndex];
-    //this limits the frequency to 100, but it depends on your frequency data
+    //this limits the frequency to 100
 
     boid.color = color(
       map(frequencyValue, -100, 0, 0, 255),

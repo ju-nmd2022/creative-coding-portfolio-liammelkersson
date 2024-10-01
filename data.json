@@ -1,5 +1,10 @@
 [
   {
+    "file": "experiments/tonejs/sound-boids/sketch.js",
+    "name": "Boids with sound experiment (press to play)",
+    "description": "I played around with tone js and tried to see how it can affect the boid flocking. It's also something I would be able to use as a base for the final project."
+  },
+  {
     "file": "experiments/flowfields/flowfield-04-color.js",
     "name": "Vortice Colore / Farbenwirbel",
     "description": "A continuation of the flowfield, but here i used colors."
@@ -43,10 +48,5 @@
     "file": "experiments/boid/boid02.js",
     "name": "Deep C",
     "description": "A contiuation of HydraVoid, another Boids."
-  },
-  {
-    "file": "experiments/tonejs/sound-boids/sketch.js",
-    "name": "Boids with sound experiment (press to play)",
-    "description": "I played around with tone js and tried to see how it can affect the boid flocking. It's also something I would be able to use as a base for the final project."
   }
 ]
